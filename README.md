@@ -68,3 +68,7 @@ Contributions are welcome. Please open an issue or submit a pull request for imp
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+
+## Example Implementation
+
+The `app` module contains a minimal example targeting Android 24+ with a simple foreground service that runs in the background. Open the project in Android Studio to build and run the sample.
