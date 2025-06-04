@@ -17,11 +17,13 @@ Research and Templates for Background Services in Android Applications
 
 ## Project Structure
 
-- **`MainActivity.java`**: UI and interaction logic.
-- **`BackgroundService.java`**: Implements the foreground service, location tracking, sensor monitoring, and API interaction.
-- **`RestartServiceReceiver.java`**: Handles service restart logic on boot or unexpected termination.
-- **Layout XML**: Defines UI layout (`activity_main.xml`).
-- **`AndroidManifest.xml`**: Configures permissions, service, and broadcast receivers.
+The repository contains a single Android application module located in the `app/` directory. The important parts of the module are:
+
+- **`app/src/main/java`** – Java source files.
+  - `MainActivity.java` – user interface and interaction logic.
+  - `BackgroundService.java` – minimal foreground service implementation.
+- **`app/src/main/res`** – XML resources such as layouts and strings (`activity_main.xml`, etc.).
+- **`app/src/main/AndroidManifest.xml`** – application manifest and permission configuration.
 
 ## Permissions
 
@@ -34,15 +36,19 @@ The app requests the following permissions:
 - `POST_NOTIFICATIONS`
 - `INTERNET`
 
-## How to Build
+## How to Build and Deploy
 
 1. Clone the repository.
    ```sh
    git clone <repository_url>
    ```
-2. Open the project in Android Studio.
-3. Allow Gradle to sync dependencies.
-4. Build and run the application on an emulator or physical Android device.
+2. Open the project in Android Studio and allow Gradle to sync all dependencies.
+3. Click **Run** to build and launch the application on a connected emulator or Android device.
+4. To produce an APK select **Build > Build Bundle(s) / APK(s) > Build APK(s)**.
+5. Install the generated APK via Android Studio or from the command line:
+   ```sh
+   adb install app/build/outputs/apk/debug/app-debug.apk
+   ```
 
 ## Usage
 
