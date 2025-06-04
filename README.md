@@ -45,6 +45,10 @@ The app requests the following permissions:
 2. Open the project in Android Studio and allow Gradle to sync all dependencies.
 3. Click **Run** to build and launch the application on a connected emulator or Android device.
 4. To produce an APK select **Build > Build Bundle(s) / APK(s) > Build APK(s)**.
+   Alternatively, assemble the debug APK from the command line:
+   ```sh
+   gradle buildApk
+   ```
 5. Install the generated APK via Android Studio or from the command line:
    ```sh
    adb install app/build/outputs/apk/debug/app-debug.apk
