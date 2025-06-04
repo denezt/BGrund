@@ -1,3 +1,4 @@
+rootProject.name = 'BGrund'
 pluginManagement {
     repositories {
         google()
@@ -5,6 +6,3 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-
-rootProject.name = 'BGrund'
-include ':app'
